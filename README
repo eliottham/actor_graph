@@ -1,0 +1,29 @@
+The main focus of this program is to design and implement efficient graph-based
+data structures and use them to explore large graphs. This graph is made up of 
+nodes which represent different actors and edges which are the different 
+movies that connect any two given actors.
+
+Compile: To compile this program run the command "./make all"
+
+Execute:
+	pathfinder.cpp: This program outputs the shortest path between two actors.
+					The path is defined by the edges (Movie titles).
+
+	This program takes 4 command-line arguments. 
+	1. Name of a text file containing the movie casts.
+	2. A lower-case character equal to 'u' or 'w' to signal whether to build
+	   the graph with weighted or unweighted edges. 
+	3. Name of a text file containing the pairs of actors for which you will
+	   find paths. 
+	4. Name for your output text file, which will contain the shortest path
+	   between each pair of actors given in the input pairs file in argument 3.
+
+	actorconnections.cpp: This program will find the year in which a given pair
+	of actors first becomes connected by either BFS or Union Find. 
+
+	This program takes 4 command-line arguments.
+	1. Name of a text file containing the movie casts.
+	2. Name of a text file containing the names of actor pairs.
+	3. Name of your output text file.
+	4. Either 'bfs' or 'ufind' to signal which method to use during execution.
+	(if no fourth argument is given, the program will run bfs by default)
